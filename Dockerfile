@@ -1,4 +1,4 @@
-FROM node:4.6
-COPY server.js .
+FROM openjdk:11
+ADD target/aws-ecs-springboot.jar aws-ecs-springboot.jar
 EXPOSE 8080
-CMD node server.js
+ENTRYPOINT ["java", "-jar", "aws-ecs-springboot.jar"]
