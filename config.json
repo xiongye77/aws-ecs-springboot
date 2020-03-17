@@ -1,6 +1,6 @@
 {
   "Parameters": {
-    "DockerImageRepository": "employee-ecs-image",
+    "DockerImageRepository": "babylon-pipeline-ecr",
     "ImageTag": "latest"
   }
 }
